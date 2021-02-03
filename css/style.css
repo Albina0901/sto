@@ -123,7 +123,6 @@ body.lock {
 
 .map {
   width: 50%;
-  height: 300px;
 }
 
 .nav__burger {
@@ -211,41 +210,12 @@ body.lock {
   font-size: 40px;
   line-height: 124.68%;
   margin-bottom: 30px;
-  -webkit-transform: translate(0, 120%);
-      -ms-transform: translate(0, 120%);
-          transform: translate(0, 120%);
-  opacity: 0;
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
-}
-.offer__title._active {
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
 }
 .offer__subtitle {
   width: 48%;
   font-size: 16px;
   line-height: 124.68%;
   margin-bottom: 70px;
-  -webkit-transform: translate(0, 120%);
-      -ms-transform: translate(0, 120%);
-          transform: translate(0, 120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s ease 1s;
-  -o-transition: all 0.8s ease 1s;
-  transition: all 0.8s ease 1s;
-}
-.offer__subtitle._active {
-  -webkit-transition: all 0.8s ease 0.4s;
-  -o-transition: all 0.8s ease 0.4s;
-  transition: all 0.8s ease 0.4s;
-  -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
 }
 
 /* Services */
@@ -307,7 +277,7 @@ body.lock {
 .about {
   padding-top: 115px;
   padding-bottom: 150px;
-  background: url("../img/about_bg.jpg") no-repeat top center/cover;
+  background: url("../img/about_bg.svg") no-repeat top center/cover;
 }
 .about-inner {
   margin-top: 80px;
@@ -408,7 +378,6 @@ body.lock {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 10px;
 }
 .footer__social {
   display: -webkit-box;
@@ -434,7 +403,7 @@ body.lock {
 }
 
 .slick-dots {
-  width: 100px;
+  width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,6 +895,7 @@ body.lock {
 
   .footer__info {
     margin-bottom: 35px;
+    text-align: center;
   }
 
   .footer__social img {

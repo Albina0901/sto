@@ -40,7 +40,6 @@ body.lock {
 }
 .map {
     width: 50%;
-    height: 300px;
 }
 .nav__burger {
     display: none;
@@ -114,27 +113,12 @@ body.lock {
         font-size: 40px;
         line-height: 124.68%;
         margin-bottom: 30px;
-        transform: translate(0, 120%);
-        opacity: 0;
-        transition: 0.8s;
-    }
-    &__title._active {
-        transform: translate(0, 0);
-        opacity: 1;
     }
     &__subtitle {
         width: 48%;
         font-size: 16px;
         line-height: 124.68%;
         margin-bottom: 70px;
-        transform: translate(0, 120%);
-        opacity: 0;
-        transition: all 0.8s ease 1s;
-    }
-    &__subtitle._active {
-        transition: all 0.8s ease 0.4s;
-        transform: translate(0, 0);
-        opacity: 1;
     }
 }
 /* Services */
@@ -188,7 +172,7 @@ body.lock {
 .about {
     padding-top: 115px;
     padding-bottom: 150px;
-    background: url("../img/about_bg.jpg") no-repeat top center/cover;
+    background: url("../img/about_bg.svg") no-repeat top center/cover;
     &-inner {
         margin-top: 80px;
     }
@@ -283,7 +267,7 @@ body.lock {
     overflow: hidden;
 }
 .slick-dots {
-    width: 100px;
+    width: 150px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -636,6 +620,7 @@ body.lock {
     }
     .footer__info {
         margin-bottom: 35px;
+        text-align: center;
     }
     .footer__social img {
         margin-right: 25px;

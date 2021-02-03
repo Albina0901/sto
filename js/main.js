@@ -31,64 +31,9 @@ $(document).ready(function() {
         }, 800);
         return false;
     });
-    // Фиксация шапки при скролле
-    // $(function() {
-    //     let header = $('.header-bottom');
-         
-    //     $(window).scroll(function() {
-    //       if($(this).scrollTop() > 1) {
-    //        header.addClass('header_fixed');
-    //       } else {
-    //        header.removeClass('header_fixed');
-    //       }
-    //     });
-    // });
 
 });
 
-// Анимация
-let animItems = document.querySelectorAll('._anim-items');
-if(animItems.length > 0) {
-    window.addEventListener('scroll', animOnScroll);
-    function animOnScroll() {
-        for (let index = 0; index < animItems.length; index++) {
-            const animItem = animItems[index];
-            const animItemHeight = animItem.offsetHeight;
-            const animItemOffset = offset(animItem).top;
-            const animStart = 4;
-
-            let animItemPoint = window.innerHeight - animItemHeight / animStart;
-            if (animItemHeight > window.innerHeight) {
-                animItemPoint = window.innerHeight - window.innerHeight / animStart;
-            }
-
-            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < 
-            (animItemOffset + animItemHeight)) {
-                animItem.classList.add('_active');
-            } else {
-                if (!animItem.classList.contains('_anim-no-hide')) {
-                    animItem.classList.remove('_active');
-                }
-            }
-        }
-    }
-    function offset(el) {
-        const rect = el.getBoundingClientRect(),
-            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-    }
-    setTimeout(() => {
-        animOnScroll();
-    }, 300);
-}
-// Маска для телефона
-// var elements = document.getElementsByClassName('mask');
-// for (var i = 0; i < elements.length; i++) {
-//   new IMask(elements[i], {
-//     mask: '+{7} (000) 000-00-00',
-//   });
-// }
 // Модальное окно
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
