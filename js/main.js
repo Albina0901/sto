@@ -93,7 +93,7 @@ function popupClose(popupActive, doUnlock = true) {
 
 function bodyLock() {
     // высчитывается ширина всего экрана и ширина объекта внутри него для счета ширины скрола
-    const lockPaddingValue = window.innerWidth - document.querySelector('.main').offsetHeight + 'px';
+    const lockPaddingValue = window.innerWidth - document.querySelector('.main').offsetWidth + 'px';
     if (lockPadding.length > 0) {
         for (let index = 0; index < lockPadding.length; index++) {
             const el = lockPadding[index];
